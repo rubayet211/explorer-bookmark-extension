@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="toolbar">
+        <div class="toolbar-group">
+          <select id="view-switcher" class="view-select" title="Change View">
+            <option value="tree">Tree View</option>
+            <option value="file">File View</option>
+          </select>
+        </div>
+        <div class="toolbar-group">
+          <button id="add-bookmark" title="Add Bookmark">
+            <i class="bi bi-bookmark-plus"></i>
+            Add Bookmark
+          </button>
+          <button id="new-folder" title="New Folder">
+            <i class="bi bi-folder-plus"></i>
+            New Folder
+          </button>
+        </div>
+        <div class="toolbar-group">
+          <button id="save-all-tabs" title="Save All Tabs">
+            <i class="bi bi-bookmarks"></i>
+            Save All Tabs
+          </button>
+          <button id="save-selected-tabs" title="Save Selected Tabs">
+            <i class="bi bi-check2-square"></i>
+            Save Selected
+          </button>
+        </div>
+        <div class="toolbar-group">
+          <button id="export-btn" title="Export Bookmarks">
+            <i class="bi bi-box-arrow-up"></i>
+            Export
+          </button>
+          <button id="import-btn" title="Import Bookmarks">
+            <i class="bi bi-box-arrow-in-down"></i>
+            Import
+          </button>
+        </div>
+      </div>
+      <div class="search-container">
+        <i class="bi bi-search search-icon"></i>
+        <input type="text" id="search" placeholder="Search bookmarks...">
+      </div>
+    </div>
+    <div id="file-navigation" class="file-navigation" style="display: none;">
+      <div class="nav-buttons">
+        <button id="nav-back" title="Back" disabled>
+          <i class="bi bi-arrow-left"></i>
+        </button>
+        <button id="nav-forward" title="Forward" disabled>
+          <i class="bi bi-arrow-right"></i>
+        </button>
+        <button id="nav-up" title="Up one level" disabled>
+          <i class="bi bi-arrow-up"></i>
+        </button>
+      </div>
+      <div id="breadcrumb" class="breadcrumb"></div>
+    </div>
+    <div id="tree" class="tree-view"></div>
+    <div id="file" class="file-view" style="display: none;"></div>
+  </div>
+  <script src="../js/popup.js"></script>
+</body>
+</html>

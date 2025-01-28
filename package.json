@@ -1,0 +1,27 @@
+{
+  "name": "explorer-bookmark",
+  "version": "1.0.0",
+  "description": "A better way to manage your bookmarks - Chrome Extension",
+  "author": "Rhyme Rubayet",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --watch --config webpack.config.js",
+    "clean": "rimraf dist",
+    "package": "npm run build && cd dist && bestzip ../explorer-bookmark.zip *"
+  },
+  "devDependencies": {
+    "bestzip": "^2.2.1",
+    "rimraf": "^5.0.1",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "copy-webpack-plugin": "^11.0.0",
+    "terser-webpack-plugin": "^5.3.9",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "html-webpack-plugin": "^5.5.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "style-loader": "^3.3.3",
+    "css-loader": "^6.8.1"
+  }
+}
