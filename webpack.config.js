@@ -40,12 +40,11 @@ module.exports = {
           from: "manifest.json",
           to: "manifest.json",
           transform(content) {
-            return Buffer.from(
-              JSON.stringify({
-                ...JSON.parse(content.toString()),
-                version: process.env.npm_package_version,
-              })
-            );
+            const manifest = JSON.parse(content.toString());
+            manifest.action.default_popup = "html/popup.html";
+            manifest.background.service_worker = "js/background.js";
+            manifest.version = process.env.npm_package_version;
+            return Buffer.from(JSON.stringify(manifest, null, 2));
           },
         },
         { from: "src/html", to: "html" },
