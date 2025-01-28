@@ -9,19 +9,21 @@
     "build": "webpack --config webpack.config.js",
     "watch": "webpack --watch --config webpack.config.js",
     "clean": "rimraf dist",
-    "package": "npm run build && cd dist && bestzip ../explorer-bookmark.zip *"
+    "package": "npm run build && cd dist && bestzip ../explorer-bookmark.zip *",
+    "package-crx": "npm run build && crx pack dist -o explorer-bookmark.crx"
   },
   "devDependencies": {
     "bestzip": "^2.2.1",
-    "rimraf": "^5.0.1",
-    "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4",
+    "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
-    "terser-webpack-plugin": "^5.3.9",
+    "crx": "^5.0.1",
+    "css-loader": "^6.8.1",
     "css-minimizer-webpack-plugin": "^5.0.1",
     "html-webpack-plugin": "^5.5.3",
-    "clean-webpack-plugin": "^4.0.0",
+    "rimraf": "^5.0.1",
     "style-loader": "^3.3.3",
-    "css-loader": "^6.8.1"
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
   }
 }

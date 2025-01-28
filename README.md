@@ -4,6 +4,31 @@
 
 **Copyright © 2024 Rhyme Rubayet. All Rights Reserved.**
 
+## Quick Installation
+
+### Method 1: Chrome Web Store (Recommended)
+
+1. Visit the Chrome Web Store (link coming soon)
+2. Click "Add to Chrome"
+3. Follow the prompts to install
+
+### Method 2: Direct Installation (.crx)
+
+1. Download the latest `explorer-bookmark.crx` file from the releases
+2. Open Chrome and go to `chrome://extensions/`
+3. Enable "Developer mode" in the top-right corner
+4. Simply drag and drop the .crx file into the Chrome window
+5. Click "Add extension" when prompted
+
+### Method 3: Manual Installation (For Development)
+
+1. Download the latest `explorer-bookmark.zip` from releases
+2. Extract the ZIP file
+3. Open Chrome and go to `chrome://extensions/`
+4. Enable "Developer mode" in the top-right corner
+5. Click "Load unpacked"
+6. Select the extracted folder
+
 ## Proprietary Notice
 
 This software, Explorer Bookmark, including its source code, design, and documentation, is proprietary and confidential. All rights are reserved. This work is protected by copyright laws and international treaties.

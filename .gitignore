@@ -23,5 +23,6 @@ build/
 .Trashes
 ehthumbs.db
 Thumbs.db
-
+key.pem
 *.zip
+*.crx
